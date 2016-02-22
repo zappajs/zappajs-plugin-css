@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "coffee -c index.coffee.md",
+    "pretest": "npm install",
     "test": "mocha"
   },
   "repository": {
@@ -22,7 +23,8 @@
   },
   "homepage": "https://github.com/zappajs/zappajs-plugin-css",
   "devDependencies": {
-    "coffee-script": "^1.10.0"
+    "coffee-script": "^1.10.0",
+    "mocha": "^2.4.5"
   },
   "dependencies": {
     "invariate": "^1.2.0"
